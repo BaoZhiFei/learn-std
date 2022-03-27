@@ -1,0 +1,25 @@
+#ifndef MEMORY
+#define MEMORY
+
+#include <cstddef>
+#include <type_traits>
+
+namespace std {
+
+template <typename T>
+class allocator {
+ public:
+  using value_type = T;
+  using size_type = size_t;
+  using difference_type = ptrdiff_t;
+  using propagate_on_container_move_assignment = true_type;
+
+  constexpr allocator() noexcept = default;
+
+  template <typename U>
+  constexpr allocator(const allocator<U>& other) noexcept {};
+
+  constexpr ~allocator() = default;
+};
+}  // namespace std
+#endif  // MEMORY

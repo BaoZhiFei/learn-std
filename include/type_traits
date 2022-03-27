@@ -1,0 +1,10 @@
+#ifndef TYPE_TRAITS
+#define TYPE_TRAITS
+
+#include <__type_traits/__is_void.h>
+#include <__type_traits/__is_null_pointer.h>
+#include <__type_traits/__is_integral.h>
+#include <__type_traits/__is_floating_point.h>
+#include <__type_traits/__is_array.h>
+
+#endif  // TYPE_TRAITS

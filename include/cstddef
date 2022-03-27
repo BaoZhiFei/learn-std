@@ -1,0 +1,13 @@
+#ifndef CSTDDEF
+#define CSTDDEF
+
+namespace std {
+
+using nullptr_t = decltype(nullptr);
+
+using size_t = unsigned long;
+
+using ptrdiff_t = signed long;
+
+}  // namespace std
+#endif  // CSTDDEF
