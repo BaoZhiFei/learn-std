@@ -3,7 +3,8 @@
 #include <type_traits>
 
 int main() {
-  int i = std::integral_constant<int, 5>::value;
-  printf("%d\n", i);
+  class cls {};
+
+  printf("%d", std::is_member_pointer<int>::value);
   return 0;
 }
