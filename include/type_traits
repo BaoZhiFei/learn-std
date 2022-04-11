@@ -18,7 +18,16 @@
 #include <__type_traits/__is_member_function_pointer.h>
 
 // Composite type categories
+#include <__type_traits/__is_fundamental.h>
+#include <__type_traits/__is_arithmetic.h>
+#include <__type_traits/__is_scalar.h>
+#include <__type_traits/__is_object.h>
+#include <__type_traits/__is_compound.h>
+#include <__type_traits/__is_reference.h>
+#include <__type_traits/__is_member_pointer.h>
 
+// Type properties
+#include <__type_traits/__is_const.h>
 
 #include <__type_traits/__is_member_pointer.h>
 
